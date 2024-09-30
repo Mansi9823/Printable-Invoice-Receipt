@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --font-orbiton: 'Orbitron', sans-serif;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: var(--font-ubuntu);
+    letter-spacing: 1px;
+}
+body:not(.printable-receipt){
+    background-color:#cfd9df;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+body.login-page{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+div.page-title, div.page-title * {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5e5e5e;
+    font-family: var(--font-orbiton);
+}
+
+.flashdata {
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-left: 8px solid var(--bs-gray-400);
+}
+
+.flashdata.flashdata-success{
+    border-left-color: var(--bs-success);
+}
+.flashdata.flashdata-danger{
+    border-left-color: var(--bs-danger);
+}
+
+.flashdata .flashdata-close {
+    text-decoration: none;
+    color: #777;
+}
+
+.flashdata .flashdata-close:hover{
+    color: #4f4f4f;
+}
+#order-item-tbl * {
+    font-size: .8rem;
+}
+
+body.printable-receipt * {
+    font-size: 11px ;
+}
+
+body.printable-receipt h3{
+    font-size: 14px ;
+}
+body.printable-receipt h4{
+    font-size: 12px ;
+}
+
+hr.dashed {
+    border: 2px dashed #000;
+    opacity: .75;
+}
+button, .btn {
+    font-family: var(--font-orbiton);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.navbar {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    padding: 15px;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    font-family: var(--font-orbiton);
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar .dropdown-menu {
+    background-color: #2c3e50;
+    border: none;
+}
+
+.navbar .dropdown-menu a {
+    color: white;
+    padding: 10px;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #34495e;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th {
+    background-color: #2d3e50;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.flashdata {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flashdata-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flashdata-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.flashdata .flashdata-close {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+}
+
+.flashdata .flashdata-close:hover {
+    color: #333;
+}
+body {
+    background: linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
